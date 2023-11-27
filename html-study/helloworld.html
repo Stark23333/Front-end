@@ -47,9 +47,39 @@
         <div>div 分割、分区，单独占一行，相当于一个盒子</div>
         <span>span 跨度、跨距，一行可以多个，相当于小盒子</span>
 
-        <!-- 图像标签 -->
-        <h4>图像标签：</h4>
-        <img src="1.jpg" />
+        <!-- 图像标签 图像要和html文件在同一文件夹 -->
+        <!-- 属性之间不区分顺序，但需要在标签后面。 -->
+        <!-- src属性必须要写 -->
+        <h3>图像标签：</h3>
+        <h4>alt 替换文本，图片不能显示时用文字替换：</h4>
+        <img src="1.jpg" alt="fail" />
+        <h4>title 提示文本，鼠标放在图像上的提示：</h4>
+        <h4>width height 图像大小：</h4>
+        <h4>border 图像边框(一般不通过html指定)：</h4>
+        <img src="images/1.jpg" alt="fail" title="Furina" width="300" border="5" />
+
+        <!-- 路径 -->
+        <!-- 目录文件夹 Front-end
+             根目录 html-study -->
+        <!-- 相对路径：以引用文件所在位置为参考基准，符号 "/"
+             同级： 
+             下级：/
+             上级：../  -->
+        <!-- 绝对路径：以盘符为基准，符号 "\" 
+             网站的图片资源也是绝对路径 -->
+
+        <!-- <a> 超链接标签 -->
+        <h3>超链接标签</h3>
+        <a href="" target="">文本或图像</a>
+        <h4>1.外部链接</h4>
+        <!-- target:_blank 新标签页 _self 当前标签页 -->
+        <a href="http://www.baidu.com" target="_blank">百度</a>
+        <h4>2.内部链接</h4>
+        <a href="html-rules.html" target="_blank">html基本规则</a>
+        <h4>3.空链接</h4>
+        <a href="#">空链接</a>
+        <h4>4.网页元素链接</h4>
+        <a href="https://ys.mihoyo.com/"><img src="images/1.jpg" alt="fail" title="Furina" width="300" /></a>
 
     </body>
 
