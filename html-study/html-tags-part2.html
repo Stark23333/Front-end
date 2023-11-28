@@ -87,6 +87,56 @@
             <dd>名词1解释2</dd>
             <dd>名词1解释3</dd>
         </dl>
+
+        <!-- 表单标签 -->
+        <h2>表单标签</h2>
+        <!-- 表单域、表单控件、提示信息 -->
+        <h3>表单域：包含表单元素的区域，提交时会将表单域的数据发送至后台</h3>
+        <form action="html-tags-part1.html" method="POST" name="name1">
+            用户名：
+            <input type="text" name="username" maxlength="6">
+            <br>
+            密码：
+            <input type="password" name="password">
+            <br>
+            <!-- 单选框 radio -->
+            性别：
+            <!-- label 标签，点击时自动将焦点转到对应的表单元素 -->
+            <label for="male">男</label>
+            <input type="radio" name="sex" id="male" value="0">
+            <label for="female">女</label>
+            <input type="radio" name="sex" id="female" value="1">
+            <br>
+            <!-- 复选框 checkbox -->
+            爱好：
+            吃饭<input type="checkbox" name="hobby" checked="checked">
+            喝水<input type="checkbox" name="hobby">
+            睡觉<input type="checkbox" name="hobby">
+            <br>
+            <!-- 下拉表单 -->
+            籍贯：
+            <select>
+                <option selected="selected">成都</option>
+                <option>绵阳</option>
+            </select>
+            <br>
+            <!-- 文本域 -->
+            个人简介：
+            <textarea cols="30" rows="2">默认</textarea>
+            <br>
+            <!-- 文件域 -->
+            上传头像<input type="file">
+            <br>
+            <input type="button" value="验证码">
+            <br>
+            <!-- submit 将表单域form内表单元素的值提交给后台服务器 -->
+            <input type="submit" value="注册">
+            <!-- 重置按钮可以还原表单元素的默认状态 -->
+            <input type="reset" value="重置">
+            <br>
+
+        </form>
+
     </body>
 
 </html>
